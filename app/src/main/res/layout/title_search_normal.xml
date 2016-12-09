@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:background="@color/title_bg_color"
+    android:gravity="center_vertical"
+    android:padding="6dp">
+
+    <!--<include layout="@layout/layout_sticky_header_view"/>-->
+
+    <TextView
+        android:id="@+id/tv_title_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/search_home_shape"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/icon_search_white"
+        android:text="找影视剧、影人、影院"
+        android:textColor="@color/title_search_text"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:background="@drawable/icon_search_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+         />
+
+</RelativeLayout>

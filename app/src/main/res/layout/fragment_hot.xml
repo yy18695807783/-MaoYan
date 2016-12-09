@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".move.fragment.viewpager.HotFragment">
+
+
+   <!--卸载bunner里面的-->
+   <!--<include layout="@layout/title_search_normal"/>-->
+
+   <!--<com.youth.banner.Banner-->
+       <!--android:id="@+id/banner"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="80dp">-->
+
+   <!--</com.youth.banner.Banner>-->
+
+
+   <!--<ListView-->
+       <!--android:id="@+id/listview_move"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent"/>-->
+
+   <com.atguigu.listviewrefresh_library.RefreshListView
+       android:id="@+id/listview_move"
+       android:divider="#33000000"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+
+</LinearLayout>

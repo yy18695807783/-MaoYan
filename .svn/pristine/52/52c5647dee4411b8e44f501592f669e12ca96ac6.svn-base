@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="153dp"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:background="#f4f4f4"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="预告片推存"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textSize="18sp" />-->
+
+
+    <include layout="@layout/layout_sticky_header_view"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_waite_yugao"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="118dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

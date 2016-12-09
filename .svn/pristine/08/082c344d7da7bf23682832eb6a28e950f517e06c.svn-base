@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\as_2.2.0_workspace\\MaoYan\\banner_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\white_radius.xml",
+        "source": "D:\\as_2.2.0_workspace\\MaoYan\\banner_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\white_radius.xml"
+    },
+    {
+        "merged": "D:\\as_2.2.0_workspace\\MaoYan\\banner_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\gray_radius.xml",
+        "source": "D:\\as_2.2.0_workspace\\MaoYan\\banner_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\gray_radius.xml"
+    },
+    {
+        "merged": "D:\\as_2.2.0_workspace\\MaoYan\\banner_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\black_background.xml",
+        "source": "D:\\as_2.2.0_workspace\\MaoYan\\banner_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\black_background.xml"
+    }
+]

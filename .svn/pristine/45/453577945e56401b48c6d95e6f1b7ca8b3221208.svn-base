@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_search_normal" />
+
+        <!--类型-->
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingTop="15dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_find_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="类型"
+                    android:textColor="#88000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!--地区-->
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingTop="15dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_find_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="地区"
+                    android:textColor="#88000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!--年代-->
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_find_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="年代"
+                    android:textColor="#88000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!--灰色线框-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#f4f4f4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_find_reying"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_find_reying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:text="热映口碑"
+                    android:textColor="#21a8ee"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_find_reying_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_find_reying"
+                    android:text="海洋奇缘"
+                    android:textColor="@android:color/darker_gray" />
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_find_reying_icon2"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/default_normal2" />
+
+                    <ImageView
+                        android:id="@+id/iv_find_reying_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/default_normal" />
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+            <!--横线灰色-->
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_find_qidai"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_find_qidai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:text="最受期待"
+                    android:textColor="#f35e4d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_find_qidai_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_find_qidai"
+                    android:text="你的名字"
+                    android:textColor="@android:color/darker_gray" />
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_find_qidai_icon2"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/default_normal" />
+
+                    <ImageView
+                        android:id="@+id/iv_find_qidai_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/default_normal2" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--横线灰色-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_find_haiwai"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_find_haiwai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:text="海外电影"
+                    android:textColor="#f57c2a"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_find_haiwai_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_find_haiwai"
+                    android:text="海洋奇缘"
+                    android:textColor="@android:color/darker_gray" />
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_find_haiwai_icon2"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/default_normal" />
+
+                    <ImageView
+                        android:id="@+id/iv_find_haiwai_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/default_normal2" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <!--横线灰色-->
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_find_TOP"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_find_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:text="TOP100"
+                    android:textColor="#85c24d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_find_top_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_find_top"
+                    android:text="霸王别姬"
+                    android:textColor="@android:color/darker_gray" />
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_find_top_icon2"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/default_normal2" />
+
+                    <ImageView
+                        android:id="@+id/iv_find_top_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/default_normal" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--灰色线框-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#f4f4f4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="全球电影奖项"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview_jiang"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@android:color/white"
+            android:scrollbars="none">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_find_quanqiujiam"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="全球电影奖项"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="17sp" />
+            <ImageView
+                android:background="@drawable/red_arr_right"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

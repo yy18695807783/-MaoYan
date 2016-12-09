@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yanyin.maoyan.move.fragment.MoveFragment">
+
+    <include layout="@layout/titlebar" />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="电影界面"-->
+        <!--android:textColor="@android:color/holo_red_light"-->
+        <!--android:textSize="40sp" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_move"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

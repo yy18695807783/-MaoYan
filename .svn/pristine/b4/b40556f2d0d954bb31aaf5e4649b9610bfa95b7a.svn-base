@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_quyu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <!--分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f4f4f4" />
+
+    <RadioGroup
+        android:id="@+id/rg_quyu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_quyu_shangquan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="商圈"
+            android:textColor="@drawable/quyu_top_selector"
+            android:textSize="18sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_quyu_ditie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="地铁站"
+            android:textColor="@drawable/quyu_top_selector"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <!--分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listview_quyu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#f1f1f1"
+            android:scrollbars="none" />
+
+
+        <ListView
+            android:id="@+id/listview_quyu_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#ffccff"
+            android:scrollbars="none" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_quyu_xiaoshi"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000" />
+
+
+</LinearLayout>

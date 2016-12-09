@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_choose_addr"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffccff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_cinema_quyu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/search_cinema_selector"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="区域"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <!--分割线-->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#e6e6e6" />
+
+        <TextView
+            android:id="@+id/tv_cinema_zuijin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/search_cinema_selector"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="离我最近"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <!--分割线-->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#e6e6e6" />
+
+        <TextView
+            android:id="@+id/tv_cinema_pinpai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/search_cinema_selector"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="品牌"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+        <!--分割线-->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#e6e6e6" />
+
+        <TextView
+            android:id="@+id/tv_cinema_fuwu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/search_cinema_selector"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="特效/服务"
+            android:textColor="#686868"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/cinema_window_quyu"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>

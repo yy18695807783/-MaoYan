@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--转圈圈的那个加载页面-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@drawable/backgroud_logo02" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_loading_anim"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@drawable/backgroud_logo01" />-->
+
+    <ProgressBar
+        android:id="@+id/pg_loading_anim"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDuration="800"
+        android:background="@drawable/backgroud_logo02"
+        android:indeterminateDrawable="@anim/rotate_anim" />
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pg_loading_anim"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="8dp"
+        android:text="努力加载中..." />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+package com.yanyin.maoyan.me.fragment;
+
+
+import com.loopj.android.http.RequestParams;
+import com.yanyin.maoyan.R;
+import com.yanyin.maoyan.base.BaseFragment;
+
+/**
+ * Created by 颜银 on 2016/11/30.
+ * QQ:443098360
+ * 微信：y443098360
+ * 作用：我的
+ */
+public class MeFragment extends BaseFragment {
+
+    @Override
+    protected RequestParams getParams() {
+        return null;
+    }
+
+    @Override
+    protected String getUrl() {
+        return null;
+    }
+
+    @Override
+    protected void initData(String content) {
+
+    }
+
+    @Override
+    protected void initTitle() {
+
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.fragment_me;
+    }
+}

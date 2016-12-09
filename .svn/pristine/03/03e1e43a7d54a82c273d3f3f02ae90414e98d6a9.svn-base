@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yanyin.maoyan.cinema.fragment.CinemaFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#D43E37">
+
+        <TextView
+            android:id="@+id/title_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:drawableRight="@drawable/ui"
+            android:text="北京"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="影院"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/iv_cinema_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_while" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.yanyin.maoyan.ui.refreshView.CustomSwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f4f4f4">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView_cinema"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.yanyin.maoyan.ui.refreshView.CustomSwipeRefreshLayout>
+
+        <include
+            layout="@layout/cinema_choose_by_type"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_addr_weizhi"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cinema_adde_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--#ededed-->
+
+            <TextView
+                android:id="@+id/tv_addr_now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/cinema_addr"
+                android:padding="4dp"
+                android:text="昌平区 北七家真"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cinema_refresh" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:text="影院界面"-->
+    <!--android:textColor="@android:color/holo_red_light"-->
+    <!--android:textSize="40sp" />-->
+
+</LinearLayout>

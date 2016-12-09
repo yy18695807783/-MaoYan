@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#D43E37"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/title_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:drawableRight="@drawable/ui"
+        android:text="北京"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_indicator"
+        android:layout_width="195dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/slidingtablayout_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/stl_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/slidingtablayout_bg"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            tl:tl_bar_color="#b51f1b"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_color="#ededed"
+            tl:tl_indicator_corner_radius="5dp"
+            tl:tl_indicator_margin_bottom="2dp"
+            tl:tl_indicator_margin_left="2dp"
+            tl:tl_indicator_margin_right="2dp"
+            tl:tl_indicator_margin_top="2dp"
+            tl:tl_indicator_style="BLOCK"
+            tl:tl_textSelectColor="#b51f1b" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_city_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_leftarr_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/white_arr_left" />
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@android:color/black"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tv_choose_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:text="选择城市"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
